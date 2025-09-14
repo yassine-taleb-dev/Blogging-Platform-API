@@ -48,3 +48,55 @@ POST /posts
   "tags": ["Tech", "Programming"]
 }
 ```
+- Each blog post should have the following fields:
+
+json
+```
+{
+  "title": "My First Blog Post",
+  "content": "This is the content of my first blog post.",
+  "category": "Technology",
+  "tags": ["Tech", "Programming"]
+}
+```
+
+### Update Blog Post
+
+- Update an existing blog post using the PUT method
+
+PUT /posts/1
+```
+{
+  "title": "My Updated Blog Post",
+  "content": "This is the updated content of my first blog post.",
+  "category": "Technology",
+  "tags": ["Tech", "Programming"]
+}
+```
+- The endpoint should validate the request body and return a 200 OK status code with the updated blog post.
+
+json
+```
+{
+  "id": 1,
+  "title": "My Updated Blog Post",
+  "content": "This is the updated content of my first blog post.",
+  "category": "Technology",
+  "tags": ["Tech", "Programming"],
+  "createdAt": "2021-09-01T12:00:00Z",
+  "updatedAt": "2021-09-01T12:30:00Z"
+}
+```
+### Delete Blog Post
+
+- Delete an existing blog post using the DELETE method
+``
+DELETE /posts/1
+```
+
+### Get All Blog Posts
+
+- Get all blog posts using the GET method
+```
+GET /posts
+```
