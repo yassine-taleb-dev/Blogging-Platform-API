@@ -90,7 +90,7 @@ json
 ### Delete Blog Post
 
 - Delete an existing blog post using the DELETE method
-``
+```
 DELETE /posts/1
 ```
 
